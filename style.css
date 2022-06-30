@@ -1,0 +1,121 @@
+#boat_calendar {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: Arial;
+}
+#boat_calendar .header_label {
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 10px;
+}
+#boat_calendar .day_labels {
+  width: 95%;
+}
+#boat_calendar .day_labels .day_label {
+  display: inline-block;
+  width: 14.2857%;
+  font-size: 0.6em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0;
+}
+#boat_calendar .calendar_wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 65%;
+}
+#boat_calendar .calendar_wrapper .days_grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 !important;
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row {
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .day_cell {
+  position: absolute;
+  width: 14.2857%;
+  height: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .day_cell.first_day_cell {
+  border-left: none;
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .day_cell .day_label {
+  position: absolute;
+  font-size: 0.6em;
+  top: 0;
+  right: 2px;
+  line-height: 12px;
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .day_cell .month_label {
+  position: absolute;
+  font-size: 0.6em;
+  top: 0;
+  left: 2px;
+  line-height: 12px;
+  color: #999;
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .booking_block {
+  display: block;
+  position: absolute;
+  width: 7.15%;
+  top: 45%;
+  bottom: 10%;
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .booking_block.available_block {
+  background-color: rgba(0, 255, 0, 0.125);
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .booking_block.available_block:hover {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+#boat_calendar .calendar_wrapper .days_grid .month_wrap .week_row .booking_block.unavailable_block {
+  background-color: rgba(255, 0, 0, 0.125);
+}
+#boat_calendar .calendar_wrapper .scrollbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5%;
+  overflow: visible;
+}
+#boat_calendar .calendar_wrapper .scrollbar .scroll_up, #boat_calendar .calendar_wrapper .scrollbar .scroll_down {
+  display: inline-block;
+  position: absolute;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 100%;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.125);
+  border-left: 1px solid white;
+  color: white;
+  font-size: 0.7em;
+  text-align: center;
+}
+#boat_calendar .calendar_wrapper .scrollbar .scroll_up:hover, #boat_calendar .calendar_wrapper .scrollbar .scroll_down:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#boat_calendar .calendar_wrapper .scrollbar .scroll_up {
+  top: 0;
+}
+#boat_calendar .calendar_wrapper .scrollbar .scroll_down {
+  bottom: 0;
+}
